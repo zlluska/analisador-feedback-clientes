@@ -68,9 +68,16 @@ Ferramenta em Python para **análise automatizada de sentimento, categorização
 
 ---
 
+## ⚠️ Limitações Conhecidas & Próximos Passos
+
+- **Processamento Sequencial (Síncrono):** Atualmente analisa os feedbacks item a item via chamada HTTP síncrona; para lotes de milhares de mensagens, o próximo passo é migrar para `AsyncOpenAI` (`asyncio`) ou Batch API.
+- **Armazenamento em Arquivo Local:** Os relatórios são exportados em JSON no disco local; planeja-se integração opcional com **SQLite / PostgreSQL** e dashboard em **Streamlit**.
+
+---
+
 ## 📝 Licença
 
-Distribuído sob a licença **MIT**. Sinta-se à vontade para usar e contribuir!
+Distribuído sob a licença **MIT**. Veja [`LICENSE`](./LICENSE) para mais detalhes.
 
 ## 👤 Autor
 
